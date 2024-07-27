@@ -1,0 +1,31 @@
+{
+  "name": "ctest",
+  "version": "1.0.0",
+  "author": "Artem Mordvinov",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.3.0"
+  },
+  "scripts": {
+    "fix": "prettier . --write",
+    "start": "node ./dist/src/index.js",
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.5",
+    "apollo-server": "^3.13.0",
+    "axios": "^1.7.2",
+    "axios-request-throttle": "^1.0.0",
+    "express": "^4.18.2",
+    "graphql": "^16.9.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.21",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
